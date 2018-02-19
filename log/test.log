@@ -1015,6 +1015,7 @@ Started GET "/students/1" for 127.0.0.1 at 2018-02-19 19:21:51 +0000
 Processing by StudentsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (1.5ms)[0m  DELETE FROM "students";
   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
@@ -1029,3 +1030,5 @@ Processing by StudentsController#show as HTML
   [1m[36m (1.7ms)[0m  [1mDELETE FROM "school_classes";[0m
   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'school_classes';[0m
+=======
+>>>>>>> 1cca4edac94255c777298527a3dfaa374a0ab2e5
